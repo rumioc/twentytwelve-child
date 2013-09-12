@@ -1,0 +1,486 @@
+/*
+Theme Name:     Twenty Twelve Child - Fearless and Loathing
+Theme URI:      http://fearlessandloathing.com
+Description:    Child theme for the Twenty Twelve theme
+Author:         David Edward Clark
+Author URI:     pagedavid.com
+Template:       twentytwelve
+Version:        0.1.0
+*/
+
+@import url("../twentytwelve/style.css");
+
+/* Small headers */
+.archive-title,
+.page-title,
+.widget-title,
+.entry-content th,
+.comment-content th {
+	font-size: 11px;
+	font-size: .76rem;
+	/* line-height: 2.181818182; */
+	text-transform: uppercase;
+	color: #000000;
+}
+.menu-toggle:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+article.post-password-required input[type=submit]:hover {
+	color: #cc0000;
+	background-color: #ebebeb;
+	background-repeat: repeat-x;
+	background-image: -moz-linear-gradient(top, #f9f9f9, #ebebeb);
+	background-image: -ms-linear-gradient(top, #f9f9f9, #ebebeb);
+	background-image: -webkit-linear-gradient(top, #f9f9f9, #ebebeb);
+	background-image: -o-linear-gradient(top, #f9f9f9, #ebebeb);
+	background-image: linear-gradient(top, #f9f9f9, #ebebeb);
+}
+/* Navigation */
+.site-content nav {
+	clear: both;
+	line-height: 1;
+	overflow: hidden;
+}
+#nav-above {
+	/* padding: 24px 0;
+	padding: 1.714285714rem 0; */
+}
+/* =Basic structure
+-------------------------------------------------------------- */
+
+/* Body, links, basics */
+html {
+	font-size: 100%;
+}
+body {
+	font-size: 14px;
+	font-size: 1rem;
+	font-family: Helvetica, Arial, sans-serif;
+	text-rendering: optimizeLegibility;
+	color: #444444;
+}
+body.custom-font-enabled {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	background-color: #ffffff;
+}
+a:hover {
+	color: #cc0000;
+	text-decoration: none;
+}
+.main-navigation .assistive-text:hover,
+.main-navigation .assistive-text:active,
+.main-navigation .assistive-text:focus {
+	background: #fff;
+	border: 2px solid #333;
+	border-radius: 3px;
+	clip: auto !important;
+	color: #cc0000;
+	display: block;
+	font-size: 12px;
+	/* padding: 12px; */
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	z-index: 100000; /* Above WP toolbar */
+}
+/* Page structure */
+.site {
+	padding: 0px;
+	padding: 0rem;
+	background-color: #fff;
+}
+body .site {
+    padding: 0rem;
+    margin-top:0rem;
+    margin-bottom: 0rem;
+    box-shadow: 0px 2px 6px rgba(100, 100, 100, 0.0);
+}
+.site-content {
+	margin: 0px;
+	margin: 0rem; 
+	text-align: justify;
+}
+.widget-area {
+	margin: 24px 0 0;
+	margin: 1.714285714rem 0 0;
+	padding: 12px;
+	padding: .714285714rem;
+}
+
+/* Header */
+.site-header {
+	padding: 0px;
+	padding: 0rem;
+}
+.site-header h1,
+.site-header h2 {
+	text-align: left; 
+	Float: left;
+}
+.site-header h1 a,
+.site-header h2 a {
+	color: #000000;
+	font-size: 2em;
+	display: inline-block;
+	text-decoration: none;
+	text-align: left; 
+}
+.site-header h1 a:hover,
+.site-header h2 a:hover {
+	color: #cc0000;
+}
+.site-header h1 {
+	font-family: 'Playfair Display SC', Georgia, serif;
+	font-weight: normal;
+	font-size: 24px;
+	font-size: 2rem;
+}
+.site-header h2 {
+	font-family: Georgia, serif;
+	font-weight: normal;
+	font-size: 13px;
+	font-size: 1.5rem;
+	color: #757575;
+	padding-left: 2rem;
+	text-align: right;
+}
+.header-image {
+	margin-top: 0px;
+	margin-top: 0rem;
+}
+
+/* Navigation Menu */
+.main-navigation { 
+	margin-top: 0px;
+	margin-top: 0rem;
+	margin-top: 1rem;
+	text-align: center;
+}
+.main-navigation li {
+
+	font-size: 12px;
+	font-size: 1;
+	line-height: 1; 
+}
+.main-navigation a {
+	color: #cc0000;
+	font-size: 1rem;
+}
+.main-navigation a:hover {
+	color: #ffffff;
+	background-color: #cc0000;
+}
+/* Banner */
+section[role="banner"] {
+	margin-bottom: 0px;
+	margin-bottom: 0rem;
+}
+
+/* Sidebar */
+.widget-area .widget {
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+	margin-bottom: 20px;
+	margin-bottom: 1.428571429rem;
+	word-wrap: break-word;
+}
+.widget-area .widget h3 {	
+}
+.widget-area .widget p,
+.widget-area .widget li,
+.widget-area .widget .textwidget {
+	font-size: 13px;
+	font-size: 0.928571429rem;
+	line-height: 1.846153846;
+	color: #444444;
+}
+.widget-area .widget p {
+	margin-bottom: 24px;
+	margin-bottom: 1.714285714rem;
+	color: #000000;
+}
+.widget-area .textwidget ul {
+	list-style: disc outside;
+	margin: 0 0 24px;
+	margin: 0 0 1.714285714rem;
+	font-size: 16px;
+	color: #000000;
+}
+.widget-area .textwidget li {
+	margin-left: 36px;
+	margin-left: 2.571428571rem;
+	font-size: 16px;
+	color: #000000;
+}
+.widget-area .widget a {
+	color: #000000;
+}
+.widget-area .widget a:hover {
+	color: #cc0000;
+	text-decoration: none;
+}
+#nav_menu-4 {
+}
+#nav_menu-4 li {
+}
+#nav_menu-4 li a{
+	text-transform: uppercase;
+	font-size: 18px;
+	font-size: 1.3rem;
+	white-space: nowrap;
+	text-decoration: none;
+	padding-left: 5%;
+}
+footer[role="contentinfo"] a:hover {
+	color: #cc0000;
+}
+/* =Main content and comment content
+-------------------------------------------------------------- */
+
+/* CUSTOM BYLINES */
+
+.byline {
+	padding-top: 1em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.byline a {
+	text-transform: uppercase;
+	text-decoration: underline;
+	padding-right: .5em;
+}
+.byline a:hover {
+	color: #cc0000;
+	text-decoration: none;
+}
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+/* SEARCH BOX STYLES */
+
+#searchform {
+	float: right;
+}
+/*--------------------------------------------------------------------------------------------------------------------------*/
+
+/* ENTRY META DATA */
+
+#entrymetadata {
+	padding-bottom: 1em;
+}
+/*--------------------------------------------------------------------------------------------------------------------------*/
+.entry-header .entry-title {
+	font-family: Georgia, serif;	
+	font-size: 24px;
+	font-size: 2rem;
+	font-weight: normal;
+	text-align; left;
+	line-height: 1.2;
+	color: #000000;
+}
+.entry-header .entry-title a {
+	font-family: Georgia, serif;
+	font-size: 24px;
+	font-size: 2rem;
+	font-weight: normal;
+	text-align; left;
+	line-height: 1.2;
+	text-decoration: none;
+	color: #000000;
+}
+.entry-header .entry-title a:hover {
+	text-decoration: none;
+	color: #cc0000;
+}
+.entry-header .comments-link {
+	display: none;
+}
+.comments-link a:hover,
+.entry-meta a:hover {
+	color: #cc0000;
+}
+.comments-display {
+	float: right;
+	margin-top: 1em;
+}
+/* NECESSARY??????????????????????????????????????????????????????????*/
+.comments
+article.sticky .featured-post {
+	border-top: 4px double #ededed;
+	border-bottom: 4px double #ededed;
+	color: #757575;
+	font-size: 13px;
+	font-size: 0.928571429rem;
+	line-height: 3.692307692;
+	margin-bottom: 24px;
+	margin-bottom: 1.714285714rem;
+	text-align: center;
+}
+.site-content article {
+	border-bottom: 4px double #999999;
+	margin-bottom: 48px;
+	margin-bottom: 3.142857143rem;
+	padding: 24px;
+	padding: 1.714285714rem;
+	word-wrap: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}
+/* =Archives
+-------------------------------------------------------------- */
+
+.archive-header,
+.page-header {
+	margin-bottom: 0px;
+	margin-bottom: 0rem;
+	padding-bottom: 22px;
+	padding-bottom: 1.571428571rem;
+	padding: 1.5em;
+	border-bottom: 0px solid white; 
+	line-height: 1.5;
+}
+.archive-meta {
+	color: #757575;
+	font-size: 12px;
+	font-size: 0.857142857rem;
+	line-height: 3;
+	margin-top: 22px;
+	margin-top: 1.571428571rem;
+}
+.archive-header h1 {
+
+}
+
+/* Archive category links */
+.archive-header li {
+	float: left;
+	list-style: none;
+	padding: 0em .5em;
+}
+
+article.format-aside h1 a:hover {
+	color: #cc0000;
+}
+.format-status .entry-header header a:hover {
+	color: #cc0000;
+}
+.comments-area article header a:hover {
+	color: #cc0000;
+}
+.comments-area article header cite a:hover {
+	text-decoration: none;
+	color: #cc0000;
+}
+a.comment-reply-link:hover,
+a.comment-edit-link:hover {
+	color: #cc0000;
+}
+.template-front-page .widget-area .widget li a:hover {
+	color: #cc0000;
+}
+/* =Media queries
+-------------------------------------------------------------- */
+
+/* Minimum width of 600 pixels. */
+@media screen and (min-width: 600px) {
+	.site-header h1 {
+		font-size: 26px;
+		font-size: 1.857142857rem;
+		line-height: 1; 
+		margin-bottom: 0;
+	}
+	.site-header h2 {
+		line-height: 1;
+		padding-top: .3em;
+	}
+	.main-navigation ul.nav-menu,
+	.main-navigation div.nav-menu > ul {
+		border-bottom: 1px solid #ededed;
+		border-top: 1px solid #ededed;
+		display: inline-block !important;
+		line-height: 1.2;
+		text-align: left;
+		width: 100%;
+		margin-top: .5rem;
+	}
+	.main-navigation li a {
+		border-bottom: 0;
+		color: #cc0000;
+		line-height: 1; 
+		text-transform: uppercase;
+		white-space: nowrap;
+	}
+	.main-navigation li a:hover {
+		background-color: #cc0000;
+		color: #ffffff;
+	}
+	.main-navigation ul li:hover > ul {
+		border-left: 0;
+		display: block;
+		color: #cc0000;
+	}
+	.main-navigation li ul li a:hover {
+		background: #e3e3e3;
+		color: #cc0000;
+	}
+	.main-navigation .current-menu-item > a,
+	.main-navigation .current-menu-ancestor > a,
+	.main-navigation .current_page_item > a,
+	.main-navigation .current_page_ancestor > a {
+		color: #cc0000;
+		font-weight: normal; 
+		text-decoration: overline;
+	}
+	.entry-header .entry-title {
+		font-family: Georgia, serif;	
+		font-size: 24px;
+		font-size: 2rem;
+		text-align; left;
+		line-height: 1.2;
+		color: #000000;
+	}
+}
+/* Minimum width of 960 pixels. */
+@media screen and (min-width: 960px) {
+	body {
+		background-color: #ffffff;
+	}
+	body.custom-background-empty {
+		background-color: #ffffff;
+	}
+}
+/* DAVID ADDED STYLES */
+
+/* ARCHIVES PAGE */
+.archive-title {
+	float: left
+}
+.archive-title li {
+	float: right;
+}
+
+.archive-header, .page-header {
+	padding: 0em;
+	padding-bottom: 1em;
+	margin-left: 1em;
+	padding-left: .5em;
+	line-height: 1.7;
+	border-bottom: 1px solid rgb(237, 237, 237);
+	border-left: 1px solid rgb(237, 237, 237);
+	border-right: 1px solid rgb(237, 237, 237);
+	min-height: .7em;
+	color: rgb(106, 106, 106);
+}
+li.cat-item a {
+	color: rgb(106, 106, 106);
+	text-decoration: none;
+}
+li.cat-item a:hover {
+	color: rgb(204, 0, 0);
+}
+
+
+
+	
