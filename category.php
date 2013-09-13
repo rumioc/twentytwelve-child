@@ -16,21 +16,16 @@ get_header(); ?>
 	<section id="primary" class="site-content">
 		<div id="content" role="main">
 
-
-
-
 		<?php if ( have_posts() ) : ?>
 			<header class="archive-header">
 				<h1 class="archive-title"><?php printf( __( '%s', 'twentytwelve' ), '<span>' . single_cat_title( '', false ) . '</span>' ); ?></h1>
-<!--Child Category navigation-->
-<?php 
-	$catname = single_cat_title('',false);
-	$catID = get_cat_ID($catname);
-	wp_list_categories( "show_option_none=&child_of=$catID&depth=0&title_li="); 
-?>
-
-
-
+			
+			<!--Child Category navigation-->
+			<?php 
+				$catname = single_cat_title('',false);
+				$catID = get_cat_ID($catname);
+				wp_list_categories( "show_option_none=&child_of=$catID&depth=0&title_li="); 
+			?>
 
 			<?php if ( category_description() ) : // Show an optional category description ?>
 				<div class="archive-meta"><?php echo category_description(); ?></div>
